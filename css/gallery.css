@@ -1,0 +1,69 @@
+.gallery {
+	padding-bottom: 0.5em; 
+}
+
+.gallery ul {
+	padding: 0;
+	margin: 0; 
+}
+
+.gallery ul:after { 
+	display: block; 
+	content: ''; 
+	clear: both; 
+}
+
+.gallery ul li { 
+	display: block; 
+	list-style: none outside; 
+	float: left; padding: 0.3em; 
+	background: #fff; 
+	border: 1px solid #999; 
+	margin: 0 0.5em 0.5em 0; 
+	position: relative; 
+}
+
+.gallery ul li a { 
+	display: block; 
+	width: 150px; 
+	height: 150px; 
+	overflow: hidden; 
+	background: #ffffff; 
+	position: relative; 
+}
+
+.gallery ul li a span { 
+	display: block; 
+	background: rgba(0,0,0,0.5); 
+	color: #FFF; position: absolute; 
+	right: 0; left: 0; 
+	bottom: -50%; 
+	padding: 0.5em; 
+	line-height: 1.2; 
+	transition: all 0.2s ease-in; 
+} 
+
+.gallery ul li a:hover span {
+	display: block; 
+	bottom: 0; 
+}
+.gallery ul li a img {
+	display: block; 
+}
+
+.gallery ul li.landscape a img {
+	max-width: inherit;
+	height: 100%;
+	width: auto; 
+}
+
+.gallery ul li.portait a img {
+	max-width: inherit; 
+	height: auto;
+	width: 100%; 
+}
+
+.gallery ul li:hover { 
+	-webkit-animation: wiggle 0.5s infinite; 
+}
+

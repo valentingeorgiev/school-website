@@ -1,0 +1,144 @@
+@media only screen and (max-width : 768px) {
+	#page { width: auto; margin: 0; }
+	.sidebar { width: 40%; }
+	.content { width: 60%; }
+	
+	.content-f { width: 19%;  }
+	.sidebar-f-left { width: 19%; }
+	.sidebar-f-right {width: 19% }
+	.sidebar-f-right1{width: 19%}
+}
+
+@media all and (max-width: 820px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+	#cssmenu {
+		background: #2B2F3A;
+	}
+	#cssmenu > ul {
+		display: none;
+	}
+	#cssmenu > ul.open {
+		display: block;
+		border-top: 1px solid rgba(0, 0, 0, 0.1);
+	}
+	#cssmenu.align-right > ul {
+		float: none;
+	}
+	#cssmenu.align-center > ul {
+		text-align: left;
+	}
+	#cssmenu > ul > li,
+	#cssmenu.align-right > ul > li {
+		float: none;
+		display: block;
+	}
+	#cssmenu > ul > li > a {
+		padding: 18px 25px 18px 25px;
+		border-right: 0;
+	}
+	#cssmenu > ul > li:hover > a,
+	#cssmenu > ul > li.active > a {
+		background: rgba(0, 0, 0, 0.1);
+	}
+	#cssmenu #menu-button {
+		display: block;
+		text-decoration: none;
+		font-size: 13px;
+		font-weight: 700;
+		color: #d3eced;
+		padding: 18px 25px 18px 25px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		cursor: pointer;
+	}
+	#cssmenu ul ul,
+	#cssmenu ul li:hover > ul,
+	#cssmenu > ul > li > ul,
+	#cssmenu ul ul ul,
+	#cssmenu ul ul li:hover > ul,
+	#cssmenu.align-right ul ul,
+	#cssmenu.align-right ul li:hover > ul,
+	#cssmenu.align-right > ul > li > ul,
+	#cssmenu.align-right ul ul ul,
+	#cssmenu.align-right ul ul li:hover > ul {
+		left: 0;
+		right: auto;
+		top: auto;
+		opacity: 1;
+		width: 100%;
+		padding: 0;
+		position: relative;
+		text-align: left;
+	}
+	#cssmenu ul ul li {
+		width: 100%;
+	}
+	#cssmenu ul ul li a {
+		width: 100%;
+		box-shadow: none;
+		padding-left: 35px;
+	}		
+	#cssmenu ul ul ul li a {
+		padding-left: 45px;
+	}
+	#cssmenu ul ul li:first-child > a,
+	#cssmenu ul ul li:last-child > a {
+		border-radius: 0;
+	}
+	#cssmenu #menu-button::after {
+		display: block;
+		content: '';
+		position: absolute;
+		height: 3px;
+		width: 22px;
+		border-top: 2px solid #d3eced;
+		border-bottom: 2px solid #d3eced;
+		right: 25px;
+		top: 18px;
+	}
+	#cssmenu #menu-button::before {
+		display: block;
+		content: '';
+		position: absolute;
+		height: 3px;
+		width: 22px;
+		border-top: 2px solid #d3eced;
+		right: 25px;
+		top: 28px;
+	}
+	#cssmenu > ul > li.has-sub > a::after,
+	#cssmenu ul ul li.has-sub > a::after {
+		display: none;
+	}
+}
+
+@media (max-width: 840px) {
+	.content-f, 
+	.sidebar-f-left, 
+	.sidebar-f-right, 
+	.sidebar-f-right1  { 
+		float: none;
+		width: auto; 
+		text-align:center; 
+	}
+	.panel-f {
+	padding-bottom: 1.5em;
+	}
+}
+
+@media only screen and (max-width : 840px) {
+	#page { width: auto; margin: 0; }
+	.sidebar,
+	.content, 
+	.content-f, 
+	.sidebar-f-left, 
+	.sidebar-f-right, 
+	.sidebar-f-right1  {
+		float: none;
+		width: auto; 
+	}
+}
+
+@media only screen 
+and (max-width : 360px) {
+	body { font-size: 8px; }
+}
